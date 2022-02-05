@@ -1,0 +1,793 @@
+    1  ls
+    2  vim /etc/ssh/sshd_config
+    3  systemctl restart sshd
+    4  passwd root
+    5  history
+    6  pwd
+    7  cd /mayur/project1/
+    8  ls
+    9  cat devops-day1
+   10  git status
+   11  git add devops-day1
+   12  ls
+   13  git status
+   14  git log
+   15  git show 5d23f24ae90c
+   16  git log --oneline
+   17  ls
+   18  git commit -m "todays command"
+   19  git log --oneline 
+   20  ls
+   21  cat devops-day1
+   22  vi devops-day1 
+   23  git status
+   24  git commit -a -m "day1 history modified"
+   25  git log --oneline 
+   26  git show d1c439c
+   27  git show a74ad8c
+   28  history 
+   29  git
+   30  yum install git -y
+   31  git
+   32  git version
+   33  mkdir /mayur
+   34  ls /
+   35  cd /mayur/
+   36  ls
+   37  mkdir project1
+   38  ls
+   39  ls -a
+   40  cd project1/
+   41  pwd
+   42  ls -a
+   43  vi test.txt
+   44  ls
+   45  ll
+   46  vi test.txt
+   47  ll
+   48  cat test.txt 
+   49  ls -a
+   50  ####################
+   51  pwd
+   52  git init
+   53  ls -a
+   54  ls .git/
+   55  git status 
+   56  cat > name.info
+   57  ls
+   58  ls -a
+   59  git status 
+   60  git add name.info 
+   61  git status 
+   62  git add *
+   63  git status 
+   64  git commit -m "this commit is for test perpose"
+   65  git log
+   66  vim index.html
+   67  ls
+   68  git ls
+   69  git lsfiles
+   70  git ls-files
+   71  ls
+   72  git status 
+   73  git add index.html 
+   74  git status 
+   75  ls
+   76  git ls-files
+   77  git commit -m "added index.html"
+   78  git log
+   79  ls
+   80  git status 
+   81  cat index.html 
+   82  cat test.txt 
+   83  vim test.txt 
+   84  ls
+   85  git ls-files
+   86  git status 
+   87  git add 
+   88  git add test.txt 
+   89  git commit -m "Modified test file with mayur"
+   90  git status 
+   91  git log 
+   92  git log --oneline 
+   93  cat test.txt 
+   94  ls
+   95  cat name.info 
+   96  git show 5d23f24
+   97  git show 58eba68
+   98  history 
+   99  vim devops-day1
+  100  ls
+  101  cat devops-day1 
+  102  git status 
+  103  pwd
+  104  ls
+  105  pwd
+  106  cd ..
+  107  pwd
+  108  cd ..
+  109  pwd
+  110  vim /etc/ssh/sshd_config
+  111  system restart sshd
+  112  systemctl restart sshd
+  113  passwd root
+  114  history
+  115  git
+  116  which git
+  117  ls
+  118  ls /
+  119  pwd
+  120  cd /mayur
+  121  ls
+  122  cd project1
+  123  ls
+  124  ls 
+  125  ls -a
+  126  git status
+  127  ls -a
+  128  cat >mayurfie1
+  129  cat mayurfile1
+  130  cat mayurfie1
+  131  git status
+  132  git add mayurfie1
+  133  git status
+  134  git commit -m "my first created file"
+  135  git status
+  136  git log
+  137  git show 3965da49901
+  138  cat >>mayurfie1
+  139  cat mayurfie1
+  140  git status
+  141  git commit -a -m "changes in previuos mayurfie1"
+  142  git log --oneline
+  143  git show 3965da4
+  144  git show 23e0620 
+  145  git ls-files
+  146  git branch
+  147  cd /mayur/project1/
+  148  ls
+  149  cd ..
+  150  mkdir project2
+  151  cd project2/
+  152  vim data
+  153  git status 
+  154  ls -a
+  155  rm data 
+  156  git status 
+  157  ls -a
+  158  git init
+  159  ls -a
+  160  ls .git/
+  161  vim .git/config 
+  162  pwd
+  163  ls ..
+  164  git status 
+  165  pwd
+  166  vim index.html
+  167  git status 
+  168  git add index.html 
+  169  git status 
+  170  git commit -m "index page is created"
+  171  git status 
+  172  ls
+  173  git ls-files
+  174  git log
+  175  chmod 777 /mayur/project2/
+  176  su - ec2-user 
+  177  chmod 666 index.html 
+  178  su - ec2-user 
+  179  git commit -a -m "chages by ec2"
+  180  git status 
+  181  git log 
+  182  git show 8fe6198
+  183   git config --global --edit
+  184   git config --global user-name "mayur"
+  185   git config --global user-name="mayur"
+  186   git config --global --user-name="mayur"
+  187   git config --global user.name="mayur"
+  188   git config --global user.name "mayur"
+  189   git config --global user.email "agrawalmayur189@gmail.com"
+  190  vim index.html 
+  191  git commit -a -m "chages done by root added user.name"
+  192  git log 
+  193  git log --oneline 
+  194  cat > mayur.info
+  195  ls
+  196  git ls-files
+  197  git status 
+  198  git commit -a -m "added user info"
+  199  git add mayur.info 
+  200  git commit -m "added user info"
+  201  git log
+  202  cat mayur.info 
+  203  vim mayur.info 
+  204  git status 
+  205  git diff mayur.info
+  206  git diff index.html
+  207  git log 
+  208  git show 10a2aba41320
+  209  git status 
+  210  git add mayur.info 
+  211  git status 
+  212  git diff --staged mayur.info
+  213  git diff mayur.info
+  214  git status 
+  215  git rm mayur.info 
+  216  git rm --cached mayur.info 
+  217  git status 
+  218  git add mayur.info 
+  219  git status 
+  220  git commit -m "making chages"
+  221  git status 
+  222  ls
+  223  git log 
+  224  git rm index.html 
+  225  git status 
+  226  ls
+  227  git rm --cached index.html
+  228  ls
+  229  git ls-files
+  230  git status 
+  231  git commit -m "index file deleted"
+  232  git log 
+  233  git show 8fe61984c56
+  234  git log 
+  235  git revert 3527d14e04a46
+  236  git log 
+  237  ls
+  238  git status 
+  239  git ls-files
+  240  cd /mayur/project2/
+  241  git status 
+  242  git log 
+  243  git reset --hard 74deffb27448
+  244  git status 
+  245  git log 
+  246  ls
+  247  git reset --hard 3527d14e04a46
+  248  git status 
+  249  ls
+  250  git log 
+  251  ls
+  252  cat index.html 
+  253  history 
+  254  git log --oneline 
+  255  history > git-day2
+  256  ls
+  257  git status 
+  258  git add git-day2 
+  259  git commit -m "day 2 learing - revised,user,config,rm,diff,cached,reset-hard"
+  260  git log --oneline 
+  261  ls
+  262  pwd
+  263  cd /mayur
+  264  ls
+  265  cd project2
+  266  ls
+  267  ls -a
+  268  cd ..
+  269  ls
+  270  ls
+  271  mkdir project3
+  272  ls
+  273  cd project3
+  274  git init
+  275  ls -a
+  276  ls ll
+  277  ls -al
+  278  cat > file1.txt
+  279  cat file.txt
+  280  cat file1.txt
+  281  git status
+  282  git add file1.txt
+  283  git status
+  284  git commit -m "first commit"
+  285  git log
+  286  git show  e74df3173
+  287  cat >> file1.txt
+  288  cat file1.txt
+  289  git status
+  290  git add .
+  291  git status
+  292  git ls -files
+  293  git ls-files
+  294  git status
+  295  git diff file1.txt
+  296  git diff --staged file1.txt
+  297  git commit -m "add second line in first commit"
+  298  git log
+  299  git diff --staged file1.txt
+  300  git diff file1.txt
+  301  git diff file1.txt
+  302  git diff --staged file1.txt
+  303  git log
+  304  cat >>file1.txt
+  305  git status
+  306  git diff file1.txt
+  307  git add .
+  308  git status
+  309  git rm --cashed file1.txt
+  310  git rm --cached file1.txt
+  311  ls
+  312  cat file1.txt
+  313  git status
+  314  cat file1.txt
+  315  git log
+  316  git status
+  317  git add .
+  318  git status
+  319  git commit -m "third line added in first commit"
+  320  git log
+  321  git show 3d191954d
+  322  cd /mayur/project3
+  323  ls
+  324  cat >> file1.txt
+  325  cat file1.txt
+  326  git status
+  327  git restore file1.txt
+  328  cat >> file1.txt
+  329  cat file1.txt
+  330  git status
+  331  cat >> file1.txt
+  332  git status
+  333  git add .
+  334  git status
+  335  git restore file1.txt
+  336  git status
+  337  cat file1.txt
+  338  git restore --staged file1.txt
+  339  git status
+  340  cat file1.txt
+  341  git add .
+  342  git status
+  343  git rm --cached file1.txt
+  344  git status
+  345  cat file1.tx
+  346  git status
+  347  git ls-files
+  348  ls
+  349  git status
+  350  git reset file1.txt
+  351  git status
+  352  git ls-files
+  353  cat file1.txt
+  354  git status
+  355  git add .
+  356  git status
+  357  git rm --cached file1.txt
+  358  git status
+  359  git ls-files
+  360  git add .
+  361  git reset file1.txt
+  362  git ls-files
+  363  git status
+  364  git status
+  365  git ls-files
+  366  git commit -m "fourth line added in first commit"
+  367  git commit -a -m "fourth line added in first commit"
+  368  git status
+  369  git log --oneline
+  370  git log --oneline
+  371  git reset --hard 6332606
+  372  git log --oneline
+  373  git show ceb75d8
+  374  git log --oneline
+  375  git show 6332606
+  376  cat file1.txt
+  377  cat >>file1.txt
+  378  git status
+  379  git add .
+  380  git ls-files
+  381  git status
+  382  git rm --cached file1.txt
+  383  git status
+  384  git ls-files
+  385  git add .
+  386  git restore --staged file1.txt
+  387  git status
+  388  git ls-files
+  389  cat file1.txt
+  390  git ls-files
+  391  git status
+  392  cat file1.txt
+  393  cat >>file1.txt
+  394  cat file1.txt
+  395  git status
+  396  git ls-files
+  397  git commit -m "fourth line added in first commit"
+  398  git status
+  399  cat file1.txt
+  400  git add .
+  401  git reset file1.txt
+  402  git status
+  403  git ls-files
+  404  git restore file1.txt
+  405  cat file1.txt
+  406  git status
+  407  git ls-files
+  408  git rm --cached file1.txt
+  409  git status
+  410  cat file1.txt
+  411  git ls-files
+  412  cd /mayur/
+  413  ls
+  414  ls project3/
+  415  cd project3/
+  416  ls
+  417  git status 
+  418  git log 
+  419  git log --oneline 
+  420  ls
+  421  git status 
+  422  git commit -m "file deleted"
+  423  git status 
+  424  cat /etc/os-release > os.info
+  425  ls
+  426  cat os.info 
+  427  git status 
+  428  git add os.info 
+  429  git status 
+  430  git commit -m "os info added"
+  431  git status 
+  432  vim .gitignore
+  433  git status 
+  434  ls -a
+  435  git add .gitignore 
+  436  git commit -m "git ignore file created"
+  437  git status 
+  438  ls
+  439  git ls-files
+  440  vim file1.txt 
+  441  git status 
+  442  cat > cpu.log
+  443  git status 
+  444  ls
+  445  vim .gitignore 
+  446  git status 
+  447  git commit -am "log file is ignore"
+  448  git status 
+  449  cat > abc.log
+  450  git status 
+  451  ls
+  452  git log 
+  453  git log --oneline 
+  454  #git reset --mixed 93ea348
+  455  git status 
+  456  git reset --mixed 93ea348
+  457  git status 
+  458  ls
+  459  cat .gitignore 
+  460  git log --oneline 
+  461  git add .
+  462  git commit -m "added after mixed reset"
+  463  git log --oneline 
+  464  ls
+  465  git show c810da4
+  466  git log --oneline 
+  467  git reset --soft 3d19195
+  468  git log --oneline 
+  469  git status 
+  470  git commit -m "added soft reset"
+  471  ls
+  472  ls -a
+  473  git log --oneline 
+  474  cat os.info 
+  475  git log --oneline 
+  476  #git reset --hard e74df31
+  477  ls
+  478  ls -a
+  479  git reset --hard e74df31
+  480  ls
+  481  git status 
+  482  git log --oneline 
+  483  git add .
+  484  git status 
+  485  git commit -m "added log file"
+  486  git status 
+  487  ls
+  488  git ls-files
+  489  git log --oneline 
+  490  git rm file1.txt 
+  491  ls
+  492  git ls-files
+  493  git status 
+  494  git commit -m "file1 deleted"
+  495  git status 
+  496  ls
+  497  git ls-files
+  498  git log --oneline 
+  499  ls
+  500  git revert 3d489cf
+  501  ls
+  502  git log --oneline 
+  503  ls
+  504  git revert 0189d4f
+  505  ls
+  506  git log --oneline 
+  507  git revert cb2b03a
+  508  ls
+  509  git log --oneline 
+  510  git reset --hard cb2b03a
+  511  ls
+  512  git status 
+  513  git log --oneline 
+  514  ls
+  515  git rm --cached file1.txt 
+  516  git status 
+  517  git log --oneline 
+  518  git reset --hard e74df31
+  519  ls
+  520  git log 
+  521  git status 
+  522  ls
+  523  vim file1.txt 
+  524  git status 
+  525  git add file1.txt 
+  526  git status 
+  527  git restore --staged file1.txt
+  528  git status 
+  529  ls
+  530  git ls-files
+  531  git diff file1.txt
+  532  git diff --staged file1.txt
+  533  git ls-file
+  534  git ls-files
+  535  git status 
+  536  git commit -am "aaaaaa"
+  537  git status 
+  538  git ls-files
+  539  ls
+  540  vim file1.txt 
+  541  git status 
+  542  git add .
+  543  git status 
+  544  git restore --staged file1.txt
+  545  git status 
+  546  git commit -am "abc"
+  547  git status 
+  548  cat sandip.txt
+  549  cat >sandip.txt
+  550  ls
+  551  git ls-files
+  552  git status 
+  553  git add sandip.txt 
+  554  git status 
+  555  git ls-files
+  556  git restore --staged sandip.txt
+  557  git ls-files
+  558  cd /mayur/
+  559  ls
+  560  mkdir project4
+  561  cd /mayur/project4/
+  562  ls
+  563  cd /mayur/
+  564  ls
+  565  cd project4/
+  566  ls
+  567  cd ../project2/
+  568  ls
+  569  git log --oneline 
+  570  cd ../project4/
+  571  ls
+  572  git status 
+  573  git init
+  574  cat /etc/os-release > index.html
+  575  ls
+  576  git status 
+  577  git add index.html 
+  578  git commit -m "added index.html"
+  579  git status 
+  580  git log --oneline 
+  581  vim index.html 
+  582  git commit -am "index file modified"
+  583  ls
+  584  git log --oneline 
+  585  git branch 
+  586  git status 
+  587  git branch dev_env master 
+  588  git branch test_env master 
+  589  git branch prod_env master 
+  590  git branch 
+  591  pwd
+  592  ls
+  593  git checkout dev_env 
+  594  git branch 
+  595  ls
+  596  git branch 
+  597  vim dev.env
+  598  ls
+  599  git branch 
+  600  git status 
+  601  git log 
+  602  git add 
+  603  git add .
+  604  git commit -m "commit on dev branch"
+  605  git log --oneline 
+  606  ls
+  607  git checkout master 
+  608  git branch 
+  609  ls
+  610  git branch 
+  611  ls
+  612  git checkout test_env 
+  613  ls
+  614  git checkout dev_env 
+  615  ls
+  616  git branch 
+  617  history 
+  618  git branch 
+  619  ls
+  620  git branch 
+  621  git checkout master 
+  622  ls
+  623  git log --oneline 
+  624  git checkout dev_env 
+  625  git log --oneline 
+  626  git merge dev_env master 
+  627  git branch 
+  628  git checkout master 
+  629  git merge dev_env master 
+  630  ls
+  631  git branch 
+  632  git log --oneline 
+  633  git branch 
+  634  vim index2.html
+  635  git status 
+  636  git add index2.html 
+  637  git commit -m "on master"
+  638  git status 
+  639  git checkout prod_env 
+  640  git status 
+  641  ls
+  642  vim index2.html 
+  643  git status 
+  644  git add index2.html 
+  645  git commit -m "on prod branch"
+  646  git log --oneline 
+  647  git checkout master 
+  648  git log --oneline 
+  649  ls
+  650  git branch 
+  651  git merge prod_env master 
+  652  git branch 
+  653  vim index2.html 
+  654  git status 
+  655  git commit -am "conflict resolve"
+  656  git status 
+  657  git log --oneline 
+  658  ls
+  659  cat index2.html 
+  660  git checkout prod_env 
+  661  ls
+  662  cat index2.html 
+  663  vim index2.html 
+  664  git status 
+  665  git commit -am "prod work is on"
+  666  git log --oneline 
+  667  git checkout master 
+  668  git merge prod_env master 
+  669  cat index2.html 
+  670  git log --oneline 
+  671  git branch 
+  672  git branch dev1 dev_env 
+  673  git branch 
+  674  git checkout dev1 
+  675  ls
+  676  git branch 
+  677  git checkout master 
+  678  ls
+  679  git status 
+  680  vim index2.html 
+  681  git status 
+  682  git stash list 
+  683  git stash 
+  684  git stash list 
+  685  git status 
+  686  ls
+  687  vim dev.env 
+  688  git status 
+  689  git stash list 
+  690  git stash 
+  691  git status 
+  692  git stash list 
+  693  vim index.html 
+  694  git commit -am "index is modified"
+  695  git status 
+  696  git stash list 
+  697  git stash pop stash@{0}
+  698  git stash list 
+  699  git status 
+  700  git stash list 
+  701  git stash 
+  702  git stash list 
+  703  git log --oneline 
+  704  git stash show 
+  705  git stash show stash@{0}
+  706  git stash show stash@{1}
+  707  git stash pop stash@{0}
+  708  git stash list 
+  709  git stash pop stash@{0}
+  710  ls
+  711  git sta
+  712  git status 
+  713  git stash 
+  714  git stash show 
+  715  git status 
+  716  git stash apply stash@{0}
+  717  git stash list 
+  718  git status 
+  719  git stash list 
+  720  git stash
+  721  git status 
+  722  git stash list 
+  723  git stash apply stash@{0}
+  724  git stash list 
+  725  git stash pop stash@{0}
+  726  git stash list 
+  727  git status 
+  728  git stash pop stash@{0}
+  729  git stash list 
+  730  git stash clear 
+  731  git stash list 
+  732  git status 
+  733  git stash 
+  734  git status 
+  735  git stash pop stash@{0} 
+  736  git stash list 
+  737  git status 
+  738  git stash 
+  739  git stash list 
+  740  git stash -p
+  741  git stash -P
+  742  git stash list 
+  743  git stash -p stash@{0}
+  744* git stash 
+  745  git stash show stash@{0}
+  746* git stash -P stash@{0
+  747  git stash -p
+  748  git stash drop stash@{0} 
+  749  ls
+  750  git stash list 
+  751  git status 
+  752  vim index2.html 
+  753  vim dev.env 
+  754  git status 
+  755  git stash list 
+  756  git stash 
+  757  git stash list 
+  758  git stash -p
+  759  git stash list 
+  760  git status 
+  761  git stash clear 
+  762  git status 
+  763  vi index2.html 
+  764  vim dev.env 
+  765  vim index.html 
+  766  git status 
+  767  git stash -p
+  768  git status 
+  769  git stash drop stash@{0} 
+  770  git status 
+  771  git stash list 
+  772  git status 
+  773  git stash 
+  774  git stash list 
+  775  git status 
+  776  git stash list 
+  777  git stash show stash@{0} 
+  778  git stash pop stash@{0} 
+  779  git status 
+  780  cat index.html 
+  781  git stash list 
+  782  git status 
+  783  cat index.html 
+  784  git stash list 
+  785  git stash 
+  786  git stash list 
+  787  git stash drop stash@{0} 
+  788  git stash list 
+  789  git status 
+  790  cat index.html 
+  791  history 
+  792  cat index.html 
+  793  history > Git-day4.txt
