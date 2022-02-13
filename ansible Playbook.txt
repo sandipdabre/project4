@@ -1,0 +1,103 @@
+[root@ansible-master PlayProject]# cat playbook1.yml
+---
+- hosts: webserver
+  become: true
+  become_user: root
+  tasks:
+  - name: Install Apache
+    yum: name=httpd state=present
+
+  - name: Deploy html file
+    copy: src=/root/PlayProject/index.html dest=/var/www/html
+
+  - name: Start Apache
+    service: name=httpd state=started
+
+
+
+[root@ansible-master PlayProject]# cat playbook1_var.yml
+---
+- hosts: webserver
+  become: true
+  become_user: root
+  vars:
+    src_path: /root/PlayProject/
+    dest_path: /var/www/html
+    web-url: https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
+  tasks:
+  - name: Install Apache
+    yum: name=httpd state=present
+
+  - name: Deploy html file
+    copy: src={{ src_path }}/index.html dest={{ dest_path }}
+
+  - name: Start Apache
+    service: name=httpd state=started
+
+[root@ansible-master PlayProject]# cat tomcat_playbook.yml
+---
+- hosts: appserver
+  become: true
+  become_user: root
+  vars:
+    web_url: https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
+    dest_path: /usr/share/tomcat/webapps
+  tasks:
+  - name: Install TomCat Server
+    yum: name=tomcat state=present
+
+  - name: Start Tomcat service
+    service: name=tomcat state=started
+
+  - name: Deploy WAR file
+    get_url: url={{ web_url }} dest={{ dest_path }}
+
+  - name: ReStart Tomcat service
+    service: name=tomcat state=restarted
+
+[root@ansible-master PlayProject]# cat tomcat_playbook_handlers.yml
+---
+- hosts: appserver
+  become: true
+  become_user: root
+  vars:
+    web_url: https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
+    dest_path: /usr/share/tomcat/webapps
+  tasks:
+  - name: Install TomCat Server
+    yum: name=tomcat state=present
+
+  - name: Start Tomcat service
+    service: name=tomcat state=started
+
+  - name: Deploy WAR file
+    get_url: url={{ web_url }} dest={{ dest_path }}
+    notify: restart tomcat
+
+  handlers:
+  - name: restart tomcat
+    service: name=tomcat state=restarted
+
+
+-----------------------------Docker file on Ansible
+
+vim dockeransible.yml
+---
+- hosts: webserver
+  become: true
+  become_user: root
+  tasks:
+  - name: Install Docker
+    yum: name=docker state=present
+
+  - name: Start Docker
+    service: name=docker state=started
+
+  - name: Get docker file
+    git: repo=https://github.com/sandipdabre/REPO.git dest=/tmp/gitrepo
+
+  - name: Build DockerFile
+    command: chdir=/tmp/gitrepo docker build -t myimage:ansible .
+
+ - name: Run DockerImage
+    command: docker run -itd -P myimage:ansible
